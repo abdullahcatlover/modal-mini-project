@@ -1,0 +1,138 @@
+.tabs-section {
+    background-color: var(--color-grey);
+    height: 100vh;
+
+}
+
+
+
+.tabs {
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.tabs-title {
+   min-width: 15rem;
+   margin-right: 1rem;
+   z-index: 1;
+}
+
+.tab {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-bottom: 1px solid grey !important;
+    border: none;
+    outline: none;
+    border-left: 3px solid orangered;
+    background: #d9d8d4;
+    cursor: pointer;
+}
+
+.active-tab {
+    background-color: var(--color-purple);
+    border-left: var(--color-purple);
+    color: #fff;
+    position: relative;
+    transition: all 1s ease-out;
+}
+
+.active-tab::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -5px;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--color-purple);
+    transform: rotate(45deg);
+    
+}
+
+.content {
+    display: none;
+    padding: 10px;
+}
+
+.active-content {
+    display: block;
+    animation: slide-right 1.5s ease-in-out;
+}
+
+.media {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .media__icons {
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    .facebook {
+        color: rgb(27, 14, 212);
+        
+    }
+
+    .instagram {
+        color: #962fbf; 
+    }
+
+    .telegram {
+       color: #0088cc;
+    }
+
+    .youtube {
+        color: red;
+    }
+}
+
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-15rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+article {
+    padding: 1rem 0;
+}
+
+@media screen and (max-width: 600px) {
+    .active-tab::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 0rem;
+        height: 0rem;
+        background-color: var(--color-purple);
+        transform: rotate(45deg);
+    }
+
+    .tabs-title {
+        width: 100%;
+    }
+
+   
+    .active-content {
+        display: block;
+        animation: slide-down 1.5s ease-in-out;
+    }
+    
+    
+    @keyframes slide-down {
+        0% {
+            transform: translateY(-12rem);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+}
