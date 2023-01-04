@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/modal-mini-project/static/css/main.ea50492f.css",
+    "main.js": "/modal-mini-project/static/js/main.bfa02cd7.js",
+    "index.html": "/modal-mini-project/index.html",
+    "main.ea50492f.css.map": "/modal-mini-project/static/css/main.ea50492f.css.map",
+    "main.bfa02cd7.js.map": "/modal-mini-project/static/js/main.bfa02cd7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea50492f.css",
+    "static/js/main.bfa02cd7.js"
+  ]
+}
